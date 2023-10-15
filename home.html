@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/img/growth.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/img/growth.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+</head>
+
+<body style="background: url(&quot;assets/img/back3.jpg&quot;) center / cover;">
+    <nav class="navbar navbar-expand-md bg-dark py-3" data-bs-theme="dark">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span
+                    class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                        viewBox="0 0 16 16" class="bi bi-file-bar-graph-fill">
+                        <path
+                            d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 11.5v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z">
+                        </path>
+                    </svg></span><span>GraphQL</span></a><button data-bs-toggle="collapse" class="navbar-toggler"
+                data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-5">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" id="home-btn" href="/home.html">My Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" id="graph-btn" href="#">Graph</a></li>
+                    <li class="nav-item"></li>
+                </ul><a class="btn btn-primary ms-md-2" role="button" id="logout-btn" href="#">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <section class="tada animated user-wrappper"
+        style="width: 80%;margin: auto;box-shadow: 10px 10px 10px 5px;margin-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5">
+                    <div class="header">
+                        <div class="banner text-center">
+                            <div class="user-info">
+                                <div class=""><span class="fs-3" id="username"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7 box">
+                    <h2>Your info:</h2>
+                    <ul class="list-unstyled" style="text-align: left;">
+                        <li style="font-size: 1.4rem;color: rgb(4,129,255);">First name:&nbsp;<span id="name"
+                                style="color: var(--bs-emphasis-color);font-size: 1.4rem;">info</span></li>
+                        <li style="font-size: 1.4rem;color: rgb(4,129,255);">Last name:&nbsp;<span id="lastname"
+                                style="color: var(--bs-emphasis-color);font-size: 1.4rem;">info</span></li>
+                        <li style="font-size: 1.4rem;color: rgb(4,129,255);">Campus:&nbsp;<span id="campus"
+                                style="color: var(--bs-emphasis-color);font-size: 1.4rem;">info</span></li>
+                        <li style="font-size: 1.4rem;color: rgb(4,129,255);">Email:&nbsp;<span id="email"
+                                style="color: var(--bs-emphasis-color);font-size: 1.4rem;">info</span></li>
+                        <li style="font-size: 1.4rem;color: rgb(4,129,255);">Phone number:&nbsp;<span id="tel"
+                                style="color: var(--bs-emphasis-color);font-size: 1.4rem;">123456712345678</span></li>
+                        <li style="font-size: 1.4rem;color: rgb(4,129,255);">Address:&nbsp;<span id="addresse"
+                                style="color: var(--bs-emphasis-color);font-size: 1.4rem;">info</span></li>
+                        <li style="font-size: 1.4rem;color: rgb(4,129,255);">City:&nbsp;<span id="city"
+                                style="color: var(--bs-emphasis-color);">info</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wobble animated"
+        style="width: 80%;margin: auto;margin-top: 50px;box-shadow: 10px 10px 10px 5px;margin-bottom: 100px;">
+        <h1 style="text-align: center;margin-top: 50px;">Your Stats</h1>
+        <h1 style="color: rgb(6,127,248);">Your XP:<span id="xp"
+                style="margin-left: 20px;color: var(--bs-emphasis-color);">Text</span></h1>
+        <h1 style="color: rgb(6,127,248);">Your Audit Ratio:<span id="ratio"
+                style="margin-left: 20px;color: var(--bs-emphasis-color);">Text</span></h1>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+
+</html>

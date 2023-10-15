@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GraphQL</title>
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/img/growth.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/img/growth.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+</head>
+
+<body style="background: url(&quot;assets/img/back3.jpg&quot;) center / cover;">
+    <nav class="navbar navbar-expand-md bg-dark py-3" data-bs-theme="dark">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span
+                    class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                        viewBox="0 0 16 16" class="bi bi-file-bar-graph-fill">
+                        <path
+                            d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 11.5v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z">
+                        </path>
+                    </svg></span>GraphQL<span id="username2"></span></a><button data-bs-toggle="collapse"
+                class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-5">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" id="home-btn" href="/home.html">My Profile</a></li>
+                    <li class="nav-item"><a class="nav-link active" id="graph-btn" href="#">Graph</a></li>
+                    <li class="nav-item"></li>
+                </ul><a class="btn btn-primary ms-md-2" role="button" id="logout-btn" href="#">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <div style="margin-top: 50px;">
+        <div class="header">
+            <div class="banner text-center">
+                <div class="user-info">
+                    <div class=""><span class="fs-3" id="username"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="tada animated section-border"
+        style="width: 90%;margin: auto;box-shadow: 10px 10px 10px 5px;margin-top: 50px;">
+        <h1>Your Projects sorted by XP</h1>
+        <div class="chart-container">
+            <canvas id="myChart1"></canvas>
+        </div>
+    </section>
+    <section class="wobble animated section-border"
+        style="width: 90%;margin: auto;margin-top: 50px;box-shadow: 10px 10px 10px 5px;margin-bottom: 100px;">
+        <div class="chart-container">
+            <h1>SVG Graph of All Xp:&nbsp;&nbsp;<span style="font-size: 16px;">Total XP includes piscines:</span><span
+                    id="xp" style="color: rgb(16,122,228);">Text</span></h1>
+            <svg id="myChart"></svg>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/graph.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+</body>
+
+</html>
