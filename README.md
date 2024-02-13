@@ -1,6 +1,6 @@
 # Graphql
 
-This project is a profile page that allows kood/Jõhvi students to check the following data about themselves:
+This project is a profile page that allows 01edu students to check the following data about themselves:
 
 - total amount of XP-s (excluding XP-s earned from picines)
 - level
