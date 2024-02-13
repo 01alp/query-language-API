@@ -17,7 +17,7 @@ User must be logged in to see the data.
 
 - go to
 
-- login with your 01.kood.tech Intra credentials
+- login with your 01edu Intra credentials
 
 ## Implementation details
 
